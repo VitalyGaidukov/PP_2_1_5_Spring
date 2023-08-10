@@ -1,6 +1,7 @@
 package koschei.models;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
@@ -8,7 +9,7 @@ import org.springframework.stereotype.Component;
 public class Island2 {
 
     private final Wood3 wood;
-
+    @Autowired
     public Island2(@Qualifier("getWood") Wood3 wood) {
         this.wood = wood;
     }
