@@ -7,12 +7,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class Wood3 {
 
-    @Autowired
-    private Rabbit4 rabbit;
 
-    public Wood3 (Rabbit4 rabbit){
-        this.rabbit = rabbit;
-    }
+    private Rabbit4 rabbit;
 
     @Override
     public String toString() {

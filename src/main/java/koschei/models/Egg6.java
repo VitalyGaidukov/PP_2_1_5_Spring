@@ -7,13 +7,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class Egg6 {
 
-    @Autowired
-    @Qualifier("getNeedle")
+
     private Needle7 needle;
 
-    public Egg6(@Qualifier("getNeedle") Needle7 needle) {
-        this.needle = needle;
-    }
 
     @Override
     public String toString() {

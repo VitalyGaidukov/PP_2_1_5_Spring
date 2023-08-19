@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class Rabbit4 {
 
-    @Autowired
-    private Duck5 duck;
+
+    private final Duck5 duck;
 
     public Rabbit4(Duck5 duck) {
         this.duck = duck;
@@ -18,8 +18,5 @@ public class Rabbit4 {
     public String toString() {
         return ", в зайце утка " + duck.toString();
     }
-    @Autowired
-    public void setDuck(Duck5 duck){
-        this.duck = duck;
-    }
+    
 }
