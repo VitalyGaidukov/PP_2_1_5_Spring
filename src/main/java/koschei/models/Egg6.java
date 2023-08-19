@@ -7,7 +7,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class Egg6 {
 
-
+    @Autowired
+    @Qualifier("getNeedle")
     private Needle7 needle;
 
 
@@ -16,9 +17,4 @@ public class Egg6 {
         return ", в яйце иголка " + needle.toString();
     }
 
-    @Autowired
-    @Qualifier("getNeedle")
-    public void setNeedle(Needle7 needle){
-        this.needle = needle;
-    }
 }
